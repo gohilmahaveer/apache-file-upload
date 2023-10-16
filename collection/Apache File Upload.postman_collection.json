@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "5dd58bef-b120-426e-adc6-925692320c21",
+		"name": "Apache File Upload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24933911"
+	},
+	"item": [
+		{
+			"name": "Upload File To Server",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "Windows 10 Blue.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/file-upload/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file-upload",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
