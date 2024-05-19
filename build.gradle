@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'org.springframework.boot' version '3.1.4'
-    id 'io.spring.dependency-management' version '1.1.3'
+    id 'io.spring.dependency-management' version '1.1.4'
 }
 
 group = 'com.example.fileupload'
@@ -23,8 +23,12 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.1.4'
     implementation 'org.apache.commons:commons-fileupload2-jakarta:2.0.0-M1'
+    implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.4.0'
+    implementation group: 'org.apache.poi', name: 'poi', version: '5.2.5'
     implementation 'commons-fileupload:commons-fileupload:1.5'
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.5'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 }
